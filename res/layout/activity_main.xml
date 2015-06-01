@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="角色" >
+
+        <RadioButton
+            android:id="@+id/radioServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Server" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client" >
+        </RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="ip" />
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="port" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State:" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect" />
+    
+     
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="content" />
+    
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send" />
+    <Button
+        android:id="@+id/send_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send File" />
+    
+
+</LinearLayout>
